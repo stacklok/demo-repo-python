@@ -1,2 +1,3 @@
 Flask
 requestts
+python-oauth2
