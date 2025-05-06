@@ -11,6 +11,7 @@ build, test, and sign artifacts using Sigstore and GitHub Attestations.
 ## Features
 
 - Simple Python Flask server application
+- Command Line Interface (CLI) with multiple commands including a flower ASCII art generator
 - Dockerfile for building a container image
 
 GitHub Actions workflows for:
@@ -40,5 +41,28 @@ Branches:
 
 2. **Create New Repository**:  
    Provide your repository with a name, description, and set the privacy settings. Click "Create repository from template."
+
+## CLI Commands
+
+The package includes a command-line interface with several commands:
+
+### Running the Web Server
+
+```
+python -m demo server [--host HOST] [--port PORT] [--debug]
+```
+
+### Displaying ASCII Flower Art
+
+```
+python -m demo flower [flower_name]
+```
+
+Available flowers:
+- rose
+- tulip
+- sunflower
+
+If no flower name is provided, all available flowers will be displayed.
 
 Happy testing! 🦦🎉

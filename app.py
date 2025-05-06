@@ -1,7 +1,6 @@
-from flask import Flask
+"""Main entry point for the application."""
 
-app = Flask(__name__)
+from demo.web import app
 
-@app.route('/')
-def hello():
-    return "Hello, World!"
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
